@@ -30,6 +30,12 @@ ReversePolarityCard >> a: spaceship playsCardIn: game aimingAt: aSquare [
 	aSquare addReversePolarityCard: (self class ownedBy: spaceship)
 ]
 
+{ #category : #'applying effects' }
+ReversePolarityCard >> applyEffectsUsing: anInitialValue [
+
+	self
+]
+
 { #category : #comparing }
 ReversePolarityCard >> hash [
 	self subclassResponsibility
